@@ -1,0 +1,36 @@
+#
+# system.prop for ventana
+#
+ro.ethernet.interface=eth0
+ro.ethernet.autoEnable=yes
+rild.libpath=/system/lib/libztetd-ril.so
+rild.libargs=-d /dev/ttyACM0 -i wwan0
+zte.service.gsmmuxd.enable=1
+zte.service.atcmdsrv.enable=1
+zte.service.usbcfgd.enable=1
+zte.is.phone=1
+zte.is.phonetype=u930
+dalvik.vm.dexopt-data-only=1
+
+ro.sf.lcd_density=240
+telephony.lteOnCdmaDevice=0
+telephony.lteOnGsmDevice=0
+
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=15
+ro.telephony.ril_class=RIL
+mobiledata.interfaces=pdp0,wlan0,gprs,ppp0,rmnet0
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+persist.sys.timezone=Asia/Shanghai
+persist.sys.language=zh
+persist.sys.country=CN
+ro.opengles.version=131072
+hwui.render_dirty_regions=true
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heapgrowthlimit=48m
+dalvik.vm.heapsize=128m
+
+ro.adb.qemud=1
+
+dalvik.vm.dexopt-flags=m=y
