@@ -1,0 +1,1 @@
+busybox killall brcm_patchram_plus
